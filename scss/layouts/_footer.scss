@@ -1,0 +1,141 @@
+.footer {
+  background-color: var(--color-brand-dark);
+  background-image: url(../images/footer.png), url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom, center top;
+  background-size: auto, cover;
+  position: relative;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/footer@2x.png), url(../images/background.svg);
+  }
+
+  &__logo {
+    width: 83px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 42px;
+    }
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    background-image: url(../images/background.svg);
+  }
+}
+
+.footer__container {
+  display: flex;
+  gap: 186px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 56px 100px;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 0;
+    padding: 32px 91px 66px 91px;
+    flex-direction: column;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  gap: 186px;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer .contacts {
+  color: var(--primery-light);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: normal;
+  transition-duration: 0.2s;
+}
+
+.footer .contacts:hover {
+  color: var(--color-brand-light);
+}
+
+.footer p {
+  color: var(--text-light);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: normal;
+}
+
+.footer__links {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.footer__contacts-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.footer__icons {
+  display: flex;
+  gap: 24px;
+
+  @media screen and (max-width: $bp-desktop) {
+    position: absolute;
+    top: 286px;
+    left: 42%;
+    gap: 20px;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    left: 36%;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    left: 32%;
+  }
+}
+
+.icon-footer {
+  fill: var(--primery-light);
+  transition-duration: 0.2s;
+}
+
+.icon-footer:hover {
+  fill: var(--color-brand-light);
+}
+
+.copyright {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 56px;
+    text-align: center;
+    margin-top: 16px;
+  }
+}
+
+.adress {
+  display: flex;
+  gap: 186px;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}

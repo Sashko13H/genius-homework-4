@@ -1,0 +1,36 @@
+.why-us-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  @media screen and (min-width: $bp-desktop) {
+    flex-direction: row;
+    gap: 56px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.why-us-item {
+  display: flex;
+  height: 181px;
+  padding: 24px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background-color: var(--primery-light);
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.why-us-text {
+  text-align: center;
+}
+
+.icon-why-us {
+  margin: 0 45%;
+  fill: #2b7fff;
+}

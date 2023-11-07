@@ -1,0 +1,20 @@
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./base";
+@import "./utils/utils";
+
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/titles";
+@import "./components/why-us-cards";
+@import "./components/procedures-cards";
+
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/about-us-section";
+@import "./layouts/why-us-section";
+@import "./layouts/procedures-section";
+@import "./layouts/contacts-section";
+@import "./layouts/footer";
+@import "./layouts/modal";
+@import "./layouts/mobile-menu";
